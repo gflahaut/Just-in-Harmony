@@ -6,24 +6,43 @@
   <meta name="description" content="Massages bien-être personnalisés, soins énergétiques et tirages de cartes à Calais - Just'in Harmony">
   <title>Just'in Harmony</title>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <nav>
-      <h1>Just'in Harmony</h1>
-      <ul>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./Images/494450271_677581204908143_3285917332055719187_n.jpg" alt="Just'in Harmony Logo">
+        <h1>Just'in Harmony</h1>
+      </div>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
         <li><a href="#">Accueil</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="carte.html">Contact</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Plus d'informations</a>
+          <div class="dropdown-content">
+            <a href="cgv.html">Conditions Générales de Vente</a>
+          </div>
+        </li>
       </ul>
     </nav>
   </header>
 
   <section class="hero">
     <h2>Bienvenue chez Just'in Harmony</h2>
-    <p>Massages bien-être, soins énergétiques et guidance spirituelle à domicile près de Calais</p>
+    <p>Je suis Justine, praticienne bien-être.
+    Je vous accompagne à travers le massage, l’énergétique et la guidance pour vous aider à relâcher les tensions, vous retrouver et cheminer en toute douceur.
+    Prenez ce temps pour vous. Votre corps vous dira merci</p>
+    <br>
+    <p>J'exerce à votre domicile 30km autour de Calais</p>
     <a href="#services" class="btn">Découvrir</a>
   </section>
 
@@ -43,25 +62,96 @@
         <p>90€</p>
       </div>
       <div class="card">
-        <h3>Soin Énergétique</h3>
-        <img alt="" fetchpriority="high" src="./Images/soin-energetique (4).jpg">
-        <p>Rééquilibrage des énergies pour le corps et l'esprit.</p>
+        <h3>Guidance</h3>
+        <img alt="" fetchpriority="high" src="./Images/fortune-telling-4896472_640-p.jpg">
+        <p>Offrez-vous un moment d'introspection et de connexion à vous-même grâce à mes séances de guidance intuitive, accompagnées de tirages.</p>
         <p>60€</p>
+      </div>
+      <div class="card">
+        <div class="card disabled">
+          <h3>Soin Énergétique</h3>
+          <img alt="" fetchpriority="high" src="./Images/soin-energetique (4).jpg">
+          <p>Rééquilibrage des énergies pour le corps et l'esprit.</p>
+          <p>60€</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="blog">
+  <section id="blog" class="blog-section">
     <h2>Articles</h2>
-    <p>À venir très bientôt : conseils bien-être, spiritualité, énergie & plus.</p>
+    <div class="blog-container">
+      <article class="blog-card">
+        <div class="blog-image">
+          <img src="./Images/massage-detente (1).jpg" alt="Massage détente">
+        </div>
+        <div class="blog-content">
+          <h3>Les bienfaits du massage détente sur le stress quotidien</h3>
+          <p class="blog-date">12 juin 2025</p>
+          <p class="blog-excerpt">Découvrez comment un massage détente régulier peut réduire significativement votre niveau de stress et améliorer votre qualité de vie au quotidien...</p>
+          <a href="#" class="blog-read-more">Lire la suite</a>
+          <div class="blog-social">
+            <a href="#" class="social-icon" aria-label="Partager sur Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" aria-label="Partager sur Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </article>
+      
+      <article class="blog-card">
+        <div class="blog-image">
+          <img src="./Images/massage-sportif (2).jpg" alt="Massage sportif">
+        </div>
+        <div class="blog-content">
+          <h3>Massage sportif : avant ou après l'effort ?</h3>
+          <p class="blog-date">5 juin 2025</p>
+          <p class="blog-excerpt">Le timing idéal pour un massage sportif fait débat. Analysons ensemble les avantages des deux approches pour optimiser vos performances...</p>
+          <a href="#" class="blog-read-more">Lire la suite</a>
+          <div class="blog-social">
+            <a href="#" class="social-icon" aria-label="Partager sur Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" aria-label="Partager sur Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </article>
+      
+      <article class="blog-card">
+        <div class="blog-image">
+          <img src="./Images/soin-energetique (3).jpg" alt="Soin énergétique">
+        </div>
+        <div class="blog-content">
+          <h3>Comprendre les soins énergétiques : au-delà du visible</h3>
+          <p class="blog-date">28 mai 2025</p>
+          <p class="blog-excerpt">Les soins énergétiques restent mystérieux pour beaucoup. Explorons ensemble les principes fondamentaux et les bénéfices concrets de ces pratiques...</p>
+          <a href="#" class="blog-read-more">Lire la suite</a>
+          <div class="blog-social">
+            <a href="#" class="social-icon" aria-label="Partager sur Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" aria-label="Partager sur Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </article>
+    </div>
+    
+    <div class="blog-navigation">
+      <a href="#" class="blog-nav-btn">Articles précédents</a>
+      <a href="#" class="blog-nav-btn">Tous les articles</a>
+      <a href="#" class="blog-nav-btn">Articles suivants</a>
+    </div>
   </section>
 
   <footer id="contact">
-    <p>© 2025 Just'in Harmony – Calais</p>
-    <p>Contact : 
-      Adresse : 25 Rue de Barcelone, 62100 Calais, France
-      Mail : just.inharmony25@gmail.com
-      Tél : 0667857677</p>
+    <div class="footer-content">
+      <div class="footer-info">
+        <p>© 2025 Just'in Harmony – Calais</p>
+        <p>Contact :</p>
+        <p><i class="fas fa-map-marker-alt"></i> Adresse : 25 Rue de Barcelone, 62100 Calais, France</p>
+        <p><i class="fas fa-envelope"></i> Mail : just.inharmony25@gmail.com</p>
+        <p><i class="fas fa-phone"></i> Tél : 0667857677</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/profile.php?id=100079688089949&locale=fr_FR" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
